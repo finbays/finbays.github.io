@@ -34,7 +34,7 @@ div.tab button {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 
 /* Change background color of buttons on hover */
@@ -50,8 +50,7 @@ div.tab button.active {
 /* Style the tab content */
 .tabcontent {
     display: none;
-	width: 90%;
-    padding: 6px 12px;
+	width: 80%;
     border: none;
 }
 
