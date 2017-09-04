@@ -30,6 +30,9 @@ Download: http://zypopwebtemplates.com/
 
 License: Creative Commons Attribution
 //-->
+
+
+
 </head>
 <body>
 <div id="container">
@@ -73,21 +76,50 @@ License: Creative Commons Attribution
 			<h2>Welcome</h2>
 			<div class="article-info">Posted by <a href="https://about.me/k.graham" rel="author" target="_blank">Kevin Graham</a></div>
 
-            <p>Finbays is a fully-featured, next generation accounting and finance services firm.<br />
+            <p>Finbays is a fully-featured, next generation accounting and finance services firm.<br>
  
-  We provide services ranging from attestation, taxation, and valuation; accounting information systems development; process review, improvement and automation; financial statement close review; internal audit outsourcing; up to fully-outsourced accounting and finance departmental functions.<br />
+			We provide services ranging from the following:</p>
+              
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Assurance')">Assurance</button>
+  <button class="tablinks" onclick="openCity(event, 'Tax')">Tax</button>
+  <button class="tablinks" onclick="openCity(event, 'Valuation')">Valuation</button>
+  <button class="tablinks" onclick="openCity(event, 'Litigation')">Litigation</button>
+  <button class="tablinks" onclick="openCity(event, 'Advisory')">Advisory</button>
+</div>
+<br>
+<div id="Assurance" class="tabcontent">
+  <p>Financial Statement Audits ~~~ Financial Accounting and Reporting Control Evaluations ~~~ Initial Public Offerings and SEC Compliance ~~~ 401(k) Audits ~~~ ERISA Compliance ~~~ Financial Statement Reviews and Compilations ~~~ Regulatory Compliance Guidance ~~~ Contractual Requirements ~~~ Internal Control Evaluations ~~~ Agreed Upon Procedures Engagements ~~~ And much more.</p>
+</div>
 
-  Our partners have decades of experience working with clients in virtually every industry: banking, energy, transportation, telecommunications, manufacturing, gaming, digital, non-profit, governmental, religious, and more.<br />
+<div id="Tax" class="tabcontent">
+  <p>Tax Returns ~~~ Reporting ~~~ Consulting ~~~ Planning ~~~ Operations ~~~ Transitions ~~~ Acquisitions and Sales ~~~ Cash Flow ~~~ Retirement Considerations ~~~ Family Transitions ~~~ Charitable Gifts ~~~ And much more.</p> 
+</div>
 
-  Whatever your industry, and whatever your accounting or finance needs may be, we're here to help.<br />
+<div id="Valuation" class="tabcontent">
+  <p>Estate and Gift Tax Compliance ~~~ Divorce ~~~ Disputes ~~~ Agreements ~~~ Charitable Contributions ~~~ Disruption ~~~ Financing ~~~ Goodwill ~~~ Initial Public Offerings ~~~ Initial Coin Offerings ~~~ Liquidation ~~~ Reorganization ~~~ Mergers and Acquisitions ~~~ Sales ~~~ Succession Planning ~~~ And much more.</p>
+</div>      
 
-  Reach out to us to schedule your confidential and free consultation today.</p>
+<div id="Litigation" class="tabcontent">
+  <p>Commercial Litigation Support ~~~ Family Law Litigation Support ~~~ Business Valuation ~~~ Expert Witness Testimony ~~~ Financial Analysis ~~~ Dispute Support ~~~ And much more.</p>
+</div>      
+
+<div id="Advisory" class="tabcontent">
+  <p>Internal Audit ~~~ Departmental Functions ~~~ Blockchain Applications ~~~ Software Setup and Support ~~~ Big Data Anylsis ~~~ Risk Management ~~~ Capital Structure ~~~ Cash Flow ~~~ Mergers and Acquisitions ~~~ Planning ~~~ Financial Reporting ~~~ Receiverships ~~~ Fraud Examinations ~~~ Consolidations ~~~ Audit Liason ~~~ Account Reconciliations ~~~ Bookkeeping ~~~ Payroll ~~~ Fixed Assets ~~~ Accounts Receivable ~~~ Accounts Payable ~~~ Sales and Use Tax ~~~ Personal Property Tax ~~~ Investment Tracking ~~~ And much more.</p>
+</div>              
+              
+              
+              <p>Our partners have decades of experience working with clients in virtually every industry: banking, energy, transportation, telecommunications, manufacturing, gaming, digital, non-profit, governmental, religious, and more.<br />
+              
+              Whatever your industry, and whatever your accounting or finance needs may be, we're here to help.<br />
+              
+              Reach out to us to schedule your confidential and free consultation today.</p>
 
 		<a href="https://www.facebook.com/finbays/" class="button" target="_blank">Learn More</a>
 		<a href="mailto:kevin.graham.ma@gmail.com" class="button button-reversed">Contact Us</a>
 
 
-		</center>
+          </center>
 		</article>
 	
 
@@ -130,5 +162,23 @@ License: Creative Commons Attribution
          </div>
     </footer>
 </div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
 </body>
 </html>
